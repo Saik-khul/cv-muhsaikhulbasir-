@@ -15,8 +15,9 @@
             <a href="#Pengalaman">Pengalaman</a> |
             <a href="#Prestasi">Prestasi</a> |
             <a href="#Keahlian">Keahlian</a> |
-            <a href="#Hobi dan Kegemaran">Hobi</a> | 
-            <a href="#Portofolio">Portofolio</a>
+            <a href="#Hobi dan Kegemaran">Hobi dan Kegemaran</a> | 
+            <a href="#Portofolio">Portofolio</a> |
+            <a href="#Kritik dan Saran">Kritik dan Saran</a>
         </nav>
     </header>
 
@@ -130,18 +131,18 @@
         </ul>
         <p>Beberapa kegemran yang saya miliki antara lain:</p>
         <ul>
-            <li>Warna: Navy</li>
+            <li> Warna: Navy
+                <label for="warna"></label>
+                <input type="color" id="warna" name="warna" value="#000080">
+            </li>
             <li>Makanan: Bakso</li>
             <li>Minuman: Kopi</li>
             <li>Idola: Nabi</li></li>
-            <li>Musik Favorit:
-                <br>
+            <li>Musik Favorit: "Cincin" - Hindia</li>
                 <audio controls>
                     <source src="Hindia - Cincin.mp3" type="audio/mpeg">
                 </audio>
-            </li>
-            <li>Film Favorit:</li>
-                <br>
+            <li>Film Favorit: "Kembang Api" tahun 2023</li>
                 <video width="320" height="240" controls>
                     <source src="Kembang Api.mp4" type="video/mp4">
                 </video>
@@ -167,14 +168,27 @@
             <li><a href="Karya Tulis Ilmiah 1.html">Karya Tulis Ilmiah 1</a></li>
             <li><a href="Karya Tulis Ilmiah 2.html">Karya Tulis Ilmiah 2</a></li>
             <li><a href="Karya Tulis Ilmiah 3.html">Karya Tulis Ilmiah 3</a></li>
-            <li><a href="Karya Tulis Ilmiah 4.html">Karya Tulis Ilmiah 3</a></li>
+            <li><a href="Karya Tulis Ilmiah 4.html">Karya Tulis Ilmiah 4</a></li>
         </ul>
     </main>
 
     <hr> </hr>
 
     <footer>
+        <section id="Kritik dan Saran"></section>
         <h3>Kritik dan Saran</h3>
+        <form action="terimakasih.html" method="post"> 
+            <label for="name">Nama:</label>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="kritik">Kritik:</label>
+            <textarea id="kritik" name="kritik" required></textarea><br>
+
+            <label for="saran">Saran:</label>
+            <textarea id="saran" name="saran" required></textarea><br>
+
+            <button type="submit">Kirim</button>
+        </form>
         <p>&copy; 2023 Muhamad Saikhul Basir. All rights reserved.</p>
     </footer>
 </body> 
