@@ -4,20 +4,153 @@
     <meta charset="UTF-8"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <title>Portofolio</title> 
-</head> 
+    <style>
+        /* Selector elemen */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Selector class */
+        .highlight {
+            color: #007BFF;
+            font-weight: bold;
+        }
+
+        /* Selector ID */
+        #footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+        }
+
+        /* Selector atribut */
+        a[target="_blank"] {
+            text-decoration: none;
+            color: #007BFF;
+        }
+
+        /* Selector pseudo-class */
+        a:hover {
+            color: #0056b3;
+            text-decoration: underline;
+        }
+
+        /* Selector kombinasi */
+        main section h2 {
+            margin-top: 20px;
+            color: #444;
+        }
+
+        /* Properti styling dasar */
+        h1 {
+            color: #222;
+            font-size: 2em;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        h2 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        p, li {
+            font-size: 1em;
+            line-height: 1.5;
+        }
+
+        /* Warna dan background */
+        header {
+            background-color: #007BFF;
+            color: white;
+            padding: 20px;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 10px;
+        }
+
+        /* Spacing */
+        main {
+            padding: 20px;
+        }
+
+        /* Border */
+        article, section {
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin-bottom: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Box model */
+        article, section {
+            max-width: 800px;
+            margin: 0 auto;
+            box-sizing: border-box; /* Menghitung lebar dan tinggi elemen */
+        }
+
+        footer {
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            text-align: center;
+        }
+
+        footer form {
+            margin: 20px auto;
+            max-width: 600px;
+        }
+
+        footer form label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        footer form input, footer form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        footer form button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        footer form button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
 <body>
     <header>
         <h1>Curiculum Vitae</h1>
-            <nav>
-                <a href="#Tentang Saya">Tentang Saya</a> |
-                <a href="#Pendidikan">Pendidikan</a> |
-                <a href="#Pengalaman">Pengalaman</a> |
-                <a href="#Prestasi">Prestasi</a> |
-                <a href="#Keahlian">Keahlian</a> |
-                <a href="#Hobi dan Kegemaran">Hobi dan Kegemaran</a> | 
-                <a href="#Portofolio">Portofolio</a> |
-                <a href="#Kritik dan Saran">Kritik dan Saran</a>
-            </nav>
+        <nav>
+            <a href="#Tentang Saya">Tentang Saya</a> |
+            <a href="#Pendidikan">Pendidikan</a> |
+            <a href="#Pengalaman">Pengalaman</a> |
+            <a href="#Prestasi">Prestasi</a> |
+            <a href="#Keahlian">Keahlian</a> |
+            <a href="#Hobi dan Kegemaran">Hobi dan Kegemaran</a> |
+            <a href="#Portofolio">Portofolio</a> |
+            <a href="#Kritik dan Saran">Kritik dan Saran</a>
+        </nav>
     </header>
 
     <main>
@@ -174,21 +307,22 @@
 
     <hr> </hr>
 
-    <footer>
-        <section id="Kritik dan Saran"></section>
+    <footer id="footer">
+        <section id="Kritik dan Saran">
             <h3>Kritik dan Saran</h3>
-                <form action="terimakasih.html" method="get"> 
-                    <label for="name">Nama:</label>
-                    <input type="text" id="name" name="name" required><br>
+            <form action="terimakasih.html" method="get"> 
+                <label for="name">Nama:</label>
+                <input type="text" id="name" name="name" required><br>
 
-                    <label for="kritik">Kritik:</label>
-                    <textarea id="kritik" name="kritik" required></textarea><br>
+                <label for="kritik">Kritik:</label>
+                <textarea id="kritik" name="kritik" required></textarea><br>
 
-                    <label for="saran">Saran:</label>
-                    <textarea id="saran" name="saran" required></textarea><br>
+                <label for="saran">Saran:</label>
+                <textarea id="saran" name="saran" required></textarea><br>
 
-                    <button type="submit">Kirim</button>
-                </form>
+                <button type="submit">Kirim</button>
+            </form>
+        </section>
         <p>&copy; 2023 Muhamad Saikhul Basir. All rights reserved.</p>
     </footer>
 </body> 

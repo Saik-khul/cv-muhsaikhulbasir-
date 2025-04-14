@@ -4,6 +4,72 @@
     <meta charset="UTF-8"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <title>Karya Ilmiah 1</title> 
+    <style>
+        /* Selector elemen */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+ 
+        /* Selector class */
+        .highlight {
+            color: #007BFF;
+            font-weight: bold;
+        }
+
+        /* Selector ID */
+        #footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+        }
+
+        /* Selector atribut */
+        a[target="_blank"] {
+            text-decoration: none;
+            color: #007BFF;
+        }
+
+        /* Selector pseudo-class */
+        a:hover {
+            color: #0056b3;
+            text-decoration: underline;
+        }
+
+        /* Selector kombinasi */
+        main article ul li {
+            margin-bottom: 10px;
+        }
+
+        /* Properti styling dasar */
+        h3 {
+            color: #333;
+            font-size: 1.5em;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            padding: 0;
+            list-style-type: none;
+        }
+
+        /* Box model */
+        article {
+            background-color: #ffffff;
+            padding: 20px;
+            border: 1px solid #ddd;
+            margin: 20px auto;
+            max-width: 800px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
 </head> 
 
 <body>
@@ -11,7 +77,7 @@
         <article>
             <h3>Informasi Karya Tulis Ilmiah 1</h3>
                 <ul>
-                    <li>Judul Karya: PEMBERDAYAAN EKONOMI MASYARAKAT DESA NGAWEN MELALUI INOVASI OLAHAN TEPUNG BIJI NANGKA EKSTRAK TERIPANG</li>
+                    <li>Judul Karya: <span class="highlight">PEMBERDAYAAN EKONOMI MASYARAKAT DESA NGAWEN MELALUI INOVASI OLAHAN TEPUNG BIJI NANGKA EKSTRAK TERIPANG</span></li>
                     <li>Tahun dibuat: 2025</li>
                     <li>Pengarang: Muhamad Saikhul Basir, Anisa Shany Farah Angelica</li>
                     <li>Pembimbing: Irvan Adhin Cholilie, S.TP., M.P.</li>
@@ -20,7 +86,7 @@
             <a href="index.html">Kembali</a>
         </article>
     </main>
-    <footer>
+    <footer id="footer">
         <p>Copyright &copy; 2025. All rights reserved.</p>
     </footer>
 </body> 

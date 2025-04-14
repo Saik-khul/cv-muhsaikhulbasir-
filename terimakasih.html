@@ -4,18 +4,98 @@
     <meta charset="UTF-8"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <title>Terima Kasih</title> 
+    <style>
+        /* Selector elemen */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Selector class */
+        .highlight {
+            color: #007BFF;
+            font-weight: bold;
+        }
+
+        /* Selector ID */
+        #footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+        }
+
+        /* Selector atribut */
+        a[target="_blank"] {
+            text-decoration: none;
+            color: #007BFF;
+        }
+
+        /* Selector pseudo-class */
+        a:hover {
+            color: #0056b3;
+            text-decoration: underline;
+        }
+
+        /* Selector kombinasi */
+        main article p {
+            margin-bottom: 10px;
+        }
+
+        /* Properti styling dasar */
+        h3 {
+            color: #333;
+            font-size: 1.5em;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1em;
+            line-height: 1.5;
+        }
+
+        /* Warna dan background */
+        article {
+            background-color: #ffffff;
+            color: #333;
+        }
+
+        /* Spacing */
+        article {
+            padding: 20px;
+            margin: 20px auto;
+        }
+
+        /* Border */
+        article {
+            border: 1px solid #ddd;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Box model */
+        article {
+            max-width: 800px;
+            box-sizing: border-box; /* Menghitung lebar dan tinggi elemen */
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
 </head> 
 
 <body>
     <main>
         <article>
             <h3>Terima Kasih</h3>
-                <p>Terima kasih telah berkunjung ke CV saya, semoga Anda menemukan informasi yang Anda cari. Kritik dan saran sangat membantu perkembangan CV saya.</p>
-                <p>Jangan lupa untuk berkunjung kembali!</p>
-                <a href="index.html">Kembali</a>
+            <p>Terima kasih telah berkunjung ke CV saya, semoga Anda menemukan informasi yang Anda cari. Kritik dan saran sangat membantu perkembangan CV saya.</p>
+            <p>Jangan lupa untuk berkunjung kembali!</p>
+            <a href="index.html">Kembali</a>
         </article>
     </main>
-    <footer>
+    <footer id="footer">
         <p>Copyright &copy; 2025. All rights reserved.</p>
     </footer>
 </body> 
